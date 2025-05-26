@@ -1,0 +1,22 @@
+/* Hero */
+.hero-section{
+  height: 1120px;
+  background-image: url("/img/hero-mob.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+
+}
+.hero-title{
+  margin-top: 230px;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-weight: 400;
+font-size: 22px;
+margin-bottom: 16px;
+}
+.hero-text{
+  width: 253px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

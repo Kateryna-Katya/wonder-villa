@@ -5,7 +5,16 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-
+  height: 1000px;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  pointer-events: none;
+  height: 1100px;
 }
 .hero-title{
   margin-top: 230px;
@@ -19,4 +28,138 @@ margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-bottom: 340px;
+}
+.hero-swiper-wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hero-swiper-wrapper .swiper-slide {
+  width: 40%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform: scale(0.8);
+  z-index: 1;
+}
+.hero-swiper-slide{
+  cursor: pointer;
+}
+.hero-swiper-wrapper .swiper-slide.is-center {
+  transform: scale(1.2);
+  z-index: 10;
+}
+@media only screen and (min-width: 1439px) {
+.hero-section {
+height: 1120px;
+background-image: url("/img/hero-desk.png");
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+height: 1100px;
+} 
+.hero-section::before {
+ content: none;
+background: none;
+} 
+.hero-title {
+  margin-top: 189px;
+  font-size: 43px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.hero-text {
+  width: 631px;
+  margin-bottom: 536px;
+}
+.hero-swiper-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-swiper-wrapper .swiper-slide {
+  width: 100%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform: scale(0.8);
+  z-index: 1;
+}
+}
+/* Game Description */
+.game-title{
+  margin-bottom: 24px;
+}
+.game-text{
+  text-align: center;
+}
+@media only screen and (min-width: 1439px) {
+  .game-title {
+      margin-bottom: 40px; 
+      margin-top: 200px;
+}
+.game-text {
+   width: 631px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+}
+/* How to Play */
+.play-title{
+  margin-bottom: 24px;
+}
+.play-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.play-item{
+  border-radius: 24px;
+    padding: 24px;
+    width: 316px;
+    height: 220px;
+    background: #c4e9fb;
+    display: flex;
+      flex-direction: column;
+      gap: 16px;
+}
+.play-item-img{
+  width: 50px;
+  height: 50px;
+}
+.play-item-name{
+  font-weight: 700;
+    font-size: 20px;
+}
+@media only screen and (min-width: 1439px) {
+  .play-title {
+      margin-bottom: 40px;
+}
+.play-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.play-item {
+  width: 368px;
+}
+}
+/* Design Your Dream Villa */
+.dream-title{
+  margin-bottom: 24px;
+  text-align: left;
+}
+.dream-img{
+  margin-top: 24px;
+}
+@media only screen and (min-width: 1439px) {
+  .dream-title {
+ margin-left: 460px;
+ } 
+ .dream-text{
+  width: 631px;
+  margin-right: 60px;
+  margin-left: auto;
+ }
+ .dream-img{
+  margin-top: -158px;
+ }
 }

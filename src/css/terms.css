@@ -1,0 +1,73 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+.policy-container {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.policy-title {
+    font-family: "ArialRoundedMTBold", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 36px;
+}
+
+.text-span {
+    font-weight: 700;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media only screen and (min-width: 1439px) {
+    .policy-container {
+        padding-left: 108px;
+        padding-right: 108px;
+        font-size: 24px;
+    }
+
+    .policy-title {
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+    .policy-subtitle {
+        font-size: 24px;
+    }
+
+}

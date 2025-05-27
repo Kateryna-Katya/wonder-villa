@@ -17,28 +17,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <script type="module" crossorigin src="/wonder-villa/index.js"></script>
     <link rel="modulepreload" crossorigin href="/wonder-villa/assets/vendor-Sm41FR0M.js">
     <link rel="stylesheet" crossorigin href="/wonder-villa/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/wonder-villa/assets/styles-B-xhtOJ4.css">
+    <link rel="stylesheet" crossorigin href="/wonder-villa/assets/styles-DwzbMAkl.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <img class="header-img" src="/wonder-villa/assets/dynamic-island-CI9SeQ51.png" alt="Dynamic Island" loading="lazy" />
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.875 8.375H24.125M3.875 14H24.125M3.875 19.625H24.125" stroke="black" stroke-width="2"
+            stroke-linecap="round" />  </svg>
+      </span>
+    </button>
 
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+         <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Game">Game Description</a>
+        </li>       
+        <li class="navigation-item">
+          <a class="links" href="index.html#Play">How to Play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">User Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Gallery">Gallery</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Game">Game Description</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Play">How to Play</a></li>
+    <li><a class="menu-list-item" href="index.html# Reviews">User Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Hero -->
- <section class="hero-section">
+ <section class="hero-section" id="Home">
   <div class="container">
     <h1 class="hero-title">Match in Style at Wonder Villa</h1>
 <p class="hero-text">Uncover hidden tiles, decorate chic spaces, and enjoy puzzle serenity like never before</p>
-<div class="swiper hero-swiper">
+<div class="swiper hero-swiper" id="Gallery">
   <div class="swiper-wrapper hero-swiper-wrapper">
     <div class="swiper-slide hero-swiper-slide">
       <picture class="picture">
@@ -103,7 +149,7 @@
   </div>
  </section>
  <!-- Game Description -->
-  <article class="game-section">
+  <article class="game-section" id="Game">
     <div class="container">
       <h2 class="game-title">Game Description</h2>
       <p class="game-text">Wonder Villa is the coziest tile match game where design meets puzzle fun. Relax, match tiles, and make your dream villa
@@ -111,7 +157,7 @@
     </div>
   </article>
   <!-- How to Play -->
-<section class="play-section">
+<section class="play-section" id="Play">
   <div class="container">
     <h2 class="play-title">How to Play</h2>
     <ul class="play-list">
@@ -144,7 +190,7 @@
   </div>
 </section>
 <!-- Design Your Dream Villa -->
- <section class="dream-section">
+ <section class="dream-section" >
   <div class="container">
     <h2 class="dream-title">Design Your Dream Villa</h2>
     <p class="dream-text">Step into the designer’s seat! With every level you complete, unlock new furniture, color palettes, and room layouts.
@@ -157,7 +203,7 @@
   </div>
  </section>
  <!-- User Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
   <div class="container">
     <h2 class="reviews-title">User Reviews</h2>
     <ul class="reviews-list">
@@ -185,7 +231,7 @@
   </div>
 </section>
 <!-- FAQ -->
-<section class="faq-section">
+<section class="faq-section" id="FAQ">
   <div class="container">
     <h2 class="faq-title">FAQ</h2>
     <ul class="faq-acc">
@@ -292,6 +338,16 @@
   </div>
 </footer>
 
+    <div id="cookie-popup" class="cookie-popup">
+    <div class="popup-wrapper">
+        <h2 class="popup-title">Cookies Policy</h2>
+        <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept">ACCEPT COOKIES</button>
+            <button id="decline-cookies" class="btn-decline">DECLINE COOKIES</button>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>

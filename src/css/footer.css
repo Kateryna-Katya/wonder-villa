@@ -1,0 +1,31 @@
+.footer{
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+        background: #fff;
+}
+.footer-container{
+    padding: 25px 20px;
+}
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    text-decoration: underline;
+        text-decoration-skip-ink: none;
+        margin-bottom: 24px;
+}
+.footer-text{
+    font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        text-align: center;
+}
+@media only screen and (min-width: 1439px) {
+    .footer-navigation{
+        flex-direction: row;
+        justify-content: center;
+    }
+.footer-text{
+font-size: 20px;
+}
+}

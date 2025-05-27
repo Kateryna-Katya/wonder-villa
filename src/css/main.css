@@ -18,7 +18,7 @@
 }
 .hero-title{
   margin-top: 230px;
-  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-family: "ArialRoundedMTBold", sans-serif;
   font-weight: 400;
 font-size: 22px;
 margin-bottom: 16px;
@@ -162,4 +162,138 @@ background: none;
  .dream-img{
   margin-top: -158px;
  }
+}
+/* User Reviews */
+.reviews-title{
+  margin-bottom: 24px;
+}
+.reviews-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reviews-item{
+  display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
+      padding: 24px;
+      width: 316px;
+      height: 208px;
+      background: #c4e9fb;
+}
+.reviews-item-img{
+  width: 50px;
+  height: 50px;
+}
+.author-reviews{
+  font-weight: 700;
+    font-size: 20px;
+}
+@media only screen and (min-width: 1439px) {
+  .reviews-title{
+    margin-bottom: 40px;
+  }
+  .reviews-list{
+    flex-direction: row;
+  }
+.reviews-item{
+  width: 270px;
+    height: 250px;
+    }
+}
+/* FAQ */
+.faq-title{
+  margin-bottom: 24px;
+}
+.faq-acc {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.faq-acc-el {
+  position: relative;
+  transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-trigger {
+  background: inherit;
+  border: none;
+  width: 312px;
+  padding: 10px 0;
+  height: auto;
+  font-size: 16px;
+  font-weight: 700;
+   cursor: pointer;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-acc-arr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+  display: none;
+}
+
+.faq-acc-el-descr-frame {
+border: none;
+  background: inherit;
+  padding: 10px 0;
+  width: 312px;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+  visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+  visibility: visible;
+  padding: 10px 0;
+  opacity: 1;
+   border-bottom: 1px solid #000;
+  width: 312px;
+  max-height: 500px;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 1439px) {
+ .faq-title{
+  margin-bottom: 40px;
+ }
+ .faq-acc{
+  width: 633px;
+ }
+ .faq-acc-el-trigger {
+  width: 633px;
+  font-size: 20px;
+ }
+ .faq-acc-el-descr-frame {
+  width: 633px;
+ }
+ .faq-acc-el.open .faq-acc-el-descr-frame {
+  width: 633px;
+ }
+}
+/* Turn Puzzles into Paradise */
+.puzzles-title{
+  margin-bottom: 24px;
+}
+.puzzles-text{
+  text-align: center;
 }
